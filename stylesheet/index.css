@@ -1,0 +1,209 @@
+/*--------------------HOMEPAGE------------------------*/
+body .row-1{
+    width: 325px;
+    height: 144px;
+    font-size: 20px;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 0.5;
+    font-size: 15px;
+}
+
+button{
+    transition-duration: 0.4s;
+    height: 80px;
+    width: 130px;
+    margin-top: 15px;
+    margin-left: 34px;
+    margin-right: 34px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: #BA4A00;
+    color: white
+}
+
+button:hover {
+    background-color: #4368B8;
+    border-radius: 20px;
+}
+
+body .button1{
+    margin-left: 101px;
+    margin-right: 101px;
+    width: 195px;
+    height: 100px;
+}
+
+h2{
+    font-size: 10px;
+    margin: auto;
+}
+
+footer .logout{
+    color: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 130px;
+    margin-left: 135px;
+    margin-top: 20px;
+    
+}
+
+
+
+/*-----------------LESSON-FEEDBACK-PAGE---------------*/
+
+/*------------SMILEY-FACE-RATING-CSS----------------*/
+h1{
+    text-align: center;
+    margin: -10px;
+}
+
+p{
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    
+}
+
+button2{
+    transition-duration: 0.4s;
+    height: 35px;
+    width: 130px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px
+}
+
+button2:hover {
+    background-color: black;
+    border-radius: 2px;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  height: 80px;
+  margin-top: -10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-bottom: 5px;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/*
+ Style the submit button 
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  height: 30px;
+  width: 120px;
+  border-radius: 20px;
+}
+*/
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.my_content_container a {
+    color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 155px;
+    padding: 5px;
+    background-color: #4CAF50;
+    text-decoration: none;
+    margin-left: 250px;
+}
+
+h1{
+    font-size: 22px;
+}
+
+/*-----------------MODULE-FEEDBACK-PAGE---------------*/
+/*see lesson feedback section- same code affects both pages*/
+
+
+/*--------------REGISTER-SCANNER-PAGE-----------------*/
+video{
+    width: 410px;
+    height: 300px;
+    
+}
+
+.return-home a {
+    color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 88px;
+    padding: 7px;
+    background-color: #4CAF50;
+    text-decoration: none;
+    margin-left: 154px;
+    margin-right: 154px
+}
+
+h3{
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 40px
+}
+
+/*---------------------QRgenerator--------------------*/
+.qrcode{
+    margin-left: 105px;
+    margin-right: 105px;
+    width: 200px;
+    height: 200px;
+    margin-top: 28px;
+    margin-bottom: 55px;
+}
+
+h4{
+   font-size: 16px; 
+   text-align: center;
+   padding-top: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.return-homepage a {
+    color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 110px;
+    padding: 7px;
+    background-color: #4CAF50;
+    text-decoration: none;
+    margin-left: 149px;
+    margin-right: 149px;
+}

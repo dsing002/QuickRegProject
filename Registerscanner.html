@@ -1,0 +1,76 @@
+<html lang=”en”>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QuickReg</title>
+    <!-- Link to your main style sheet-->
+    <link rel="stylesheet" type="text/css" href="stylesheet/index.css">
+    
+    <style>
+        /*container is used on all pages to keep the page sizes the same interms of width*/
+            html, body {
+                width: 50%;
+                height: 50%;
+                margin: 0;
+                padding: 0;
+                background-color: ;
+            }
+            #container {
+                width: 410px;
+                height: 555px;
+                margin: 0;
+                padding: 0;
+                background-color:lightgray;
+            }
+        </style>
+<!--
+///////////////////////  NEW CODE SOURCED FORM GITLAB AND PRODUCED BY Ray Carneiro FOUND HERE AT: https://github.com/rcarneironet/qrcodejs ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+-->
+     <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js" ></script>
+</head>
+    
+    <!--   Qucik reg title is placed in the header above all content    -->
+    <div id="container">
+    <header>
+    
+     <img src="images/Logo.png">
+    </header>
+    
+<body>
+<video id="preview" ></video>
+    <script>
+        //creates a new scanner
+        let scanner = new Instascan.Scanner(
+            {
+                video: document.getElementById('preview')
+            }
+        );
+        //message to indicate that the scan has been successful
+        scanner.addListener('scan', function(content) {
+            alert('Thank you, you have now been registered and are being sent back to the homepage:' + content);
+            window.open(content, "_blank");
+        });
+        Instascan.Camera.getCameras().then(cameras => 
+        {
+            if(cameras.length > 0){
+                scanner.start(cameras[0]);
+            } else {
+                //if a camera cannot be accessed or denied permission then this message appears
+                console.error("No camera has been found on this device!");
+            }
+        });
+    </script> 
+    
+    <!--  message to assists users when scanning  -->
+    <h3>Place the code within the camera frame, and hold the camera steady.</h3>
+    
+    <!--  button that return a user to the homepage once done  -->
+    <div class="return-home">
+    <a href="Homepage.html">Return Home</a>
+</div>
+    
+</body>
+    </div>
+</html>

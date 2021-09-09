@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta title="QucikReg">
+                <meta name="QuickReg">
+                    <meta name="description" content="providing and alternative solution to ">
+                <meta name="author" content="Darshan singh">
+            <meta name="refresh">
+         <!-- Link to your main style sheet-->
+         <link rel="stylesheet" type="text/css" href="stylesheet/index.css">
+            <title>QuickReg App</title> 
+        
+        <style>
+            /*sets the pages dynamics to the right size*/
+            html, body {
+                width: 50%;
+                height: 50%;
+                margin: 0;
+                padding: 0;
+                background-color: ;
+            }
+            /*container is used on all pages to keep the page sizes the same interms of width*/
+            #container {
+                width: 410px;
+                height: 555px;
+                margin: 0;
+                padding: 0;
+                background-color:lightgray;
+            }
+        </style>
+    </head>
+   <div id="container">
+     <!--   Qucik reg title is placed in the header above all content    -->
+    <header>
+     <img src="images/Logo.png" >
+    </header>
+<body>
+     
+    <!--notification bar-->
+    <div class='row-1'>
+        <b>Current Lesson:</b>
+        <p>Software projects</p>
+        
+        <b>Room:</b>
+        <p>RHB 143</p>
+        
+        <b>Time:</b>
+        <p>14:00 - 15:30</p>
+        
+        <a href="Registerscanner.html">Tap to scan register code</a>
+            
+    </div>
+    
+    <!--menu items scanner button-->
+    <button type="button" type="button" onclick="location.href='Registerscanner.html';"><img src="images/scan.jpg" width="55px"><h2>QR Scanner</h2></button>
+        
+         <!--menu items lesson feedback-->
+         <button type="button" onclick="location.href='LessonFeedback.html';"><img src="images/lessongfeedback.jpg" width="60px" height="55px"><h2>lesson feedback</h2></button>
+    
+             <!--menu items module feedback-->
+             <button name="button" type="button" onclick="location.href='ModuleFeedback.html';"><img src="images/modulefeedback.jpg" width="60px" height="55px"><h2>Module feedback</h2></button>
+    
+             <!--menu items QR generator-->
+             <button name="button" type="button" onclick="location.href='QRgenerator.html';"><img src="images/QRgenerator.jpeg" width="60px" height="55px"><h2>QR generator</h2></button>
+    
+    </body>
+       <footer>
+           <!--logout button-->
+           <button class="logout" type="button"> logout </button>
+       </footer>
+    </div>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>QuickReg</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" /><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <!-- Link to your main style sheet-->
+    <link rel="stylesheet" type="text/css" href="stylesheet/index.css">
+    
+    <style>
+           /*container is used on all pages to keep the page sizes the same interms of width*/
+            html, body {
+                width: 50%;
+                height: 50%;
+                margin: 0;
+                padding: 0;
+                background-color: ;
+            }
+            #container {
+                width: 410px;
+                height: 555px;
+                margin: 0;
+                padding: 0;
+                background-color:lightgray;
+            }
+        </style>
+
+</head>
+    <div id="container">
+    <header>
+            <!--   Qucik reg title is placed in the header above all content    -->
+     <img src="images/Logo.png">
+    </header>
+    
+        <!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////QR GENERATOR SOURCED AND CREATED BY Baroninn Vefhönnun FOUND HERE AT:///////////////////////////////////// 
+/////////////////////////////////////////////////////////https://codepen.io/baroninn/pen/WmKjjP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+
+
+<body>
+    
+    <h4>Please enter the name of the lecture and time to generate the code for students to scan by copying and pasting it to your lecture slides</h4>
+    
+<!-- partial:index.partial.html -->
+    <input id="text" type="text" value="https://google.com" style="width:250px; height: auto; margin-left: 80px; margin-right: 80px" class="mt-4"/>
+    
+    <div id="qrcode"></div>
+    
+ 
+    
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/gh/baroninn/qrcodejs@master/jquery.min.js'></script>
+    
+<script src='https://cdn.jsdelivr.net/gh/baroninn/qrcodejs@master/qrcode.js'></script><script  src="./script.js"></script>
+    
+    <!--  button that returns users to the homepage  -->
+    <div class="return-homepage">
+    <a href="Homepage.html">Return Home</a>
+</div>
+
+</body>
+    </div>
+</html>
+
